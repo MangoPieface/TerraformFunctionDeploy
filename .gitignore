@@ -286,3 +286,11 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+#Terraform stuff
+*.tfvars
+OctopusDeployServicePrinciple.ps1
+terraform*.tfstate
+terraform.tfstate.backup
+.terraform/plugins/windows_amd64/lock.json
+.terraform/
