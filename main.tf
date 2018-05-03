@@ -29,4 +29,8 @@ resource "azurerm_function_app" "production" {
   resource_group_name       = "${azurerm_resource_group.production.name}"
   app_service_plan_id       = "${azurerm_app_service_plan.production.id}"
   storage_connection_string = "${azurerm_storage_account.production.primary_connection_string}"
+
+  lifecycle {
+    ignore_changes = ["app_settings"]
+  }
 }

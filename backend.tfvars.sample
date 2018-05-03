@@ -1,0 +1,9 @@
+resource_group_name = "the resource group"
+
+storage_account_name = "the storage account name"
+
+container_name = "the container name"
+
+key = "The key of the blob"
+
+access_key = "The access key to get to the container"
