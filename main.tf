@@ -9,6 +9,10 @@ resource "azurerm_storage_account" "production" {
   location                 = "${azurerm_resource_group.production.location}"
   account_tier             = "Standard"
   account_replication_type = "LRS"
+  
+  tags {
+    environment = "testdeploy"
+  }
 }
 
 resource "azurerm_app_service_plan" "production" {
